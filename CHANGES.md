@@ -16,7 +16,16 @@ export class AppComponent {
 ### index.html
 
 ```js
-<script type="module" async src="https://jav.demo.cloud.gooddata.com/components/demo-parent.js?auth=sso"></script>
+<script type="module" async>
+  import { setContext } from "https://______.cloud.gooddata.com/components/demo-parent.js";
+  import factory, { TigerTokenAuthProvider } from "https://______.cloud.gooddata.com/components/tigerBackend.js";
+  setContext({
+      backend: factory()
+          .onHostname("https://______.cloud.gooddata.com")
+          .withAuthentication(new TigerTokenAuthProvider("your_generated_token")),
+      workspaceId: "your_workspace_id",
+  });
+</script>
 ```
 
 ### app.components.html
