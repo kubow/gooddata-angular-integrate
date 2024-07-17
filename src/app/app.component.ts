@@ -1,7 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,5 +13,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'gooddata-angular';
-  dashboardId = '092929af-375a-4e9c-964f-2add8cdbd259';
+  dashboardId = 'dashboard_id';
 }
