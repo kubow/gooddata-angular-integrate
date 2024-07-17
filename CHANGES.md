@@ -6,6 +6,11 @@ schemas: [
            CUSTOM_ELEMENTS_SCHEMA,
          ]
 
+export class AppComponent {
+  ...
+  dashboardId = 'your_dashboard_id';
+}
+
 ```
 
 ### index.html
@@ -17,5 +22,5 @@ schemas: [
 ### app.components.html
 
 ```js
-<gd-dashboard dashboard="092929af-375a-4e9c-964f-2add8cdbd259"></gd-dashboard>
+<gd-dashboard [attr.dashboard]="dashboardId"></gd-dashboard>
 ```

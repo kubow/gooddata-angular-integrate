@@ -14,4 +14,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'gooddata-angular';
+  dashboardId = '092929af-375a-4e9c-964f-2add8cdbd259';
 }
